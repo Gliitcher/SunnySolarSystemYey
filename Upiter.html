@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Юпитер</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Юпитер</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Юпитер</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/yupi.png" width="400" class="planet_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Юпитер — гигантская планета, царь Солнечной системы. Его масса в 2.5 раза превышает массу всех остальных планет вместе взятых.</p>
+                        <ul>
+                            <li>Пятая планета от Солнца</li>
+                            <li>Крупнейшая планета Солнечной системы</li>
+                            <li>Относится к газовым гигантам</li>
+                            <li>Имеет знаменитое Большое Красное Пятно — гигантский шторм</li>
+                            <li>Обладает мощным магнитным полем</li>
+                            <li>Имеет 95 известных спутников</li>
+                        </ul>
+                        <p class="bold">Юпитер в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 69 911 км (в 11 раз больше Земли)</li>
+                            <li>Температура верхних слоев: около -145°C</li>
+                            <li>Год: 4333 земных дня (около 12 лет)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>Своей мощной гравитацией Юпитер притягивает множество комет и астероидов, 
+                             защищая внутренние планеты Солнечной системы от столкновений</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>Большое Красное Пятно — гигантский шторм, бушующий как минимум 400 лет. 
+                             Его размеры превышают диаметр Земли</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>Юпитер обладает звездными характеристиками, но его масса недостаточна 
+                             для начала термоядерных реакций. Для этого нужно быть в 80 раз массивнее</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>У Юпитера есть система колец, но они очень тонкие и темные, 
+                             поэтому не видны с Земли невооруженным глазом</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>Европа, один из спутников Юпитера, имеет подледный океан жидкой воды, 
+                             где ученые не исключают возможность существования жизни</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

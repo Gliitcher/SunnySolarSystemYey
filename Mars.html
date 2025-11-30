@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Марс</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Марс</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Марс</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/mars.png" width="300" class="planet_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Марс — красная планета. Это один из самых изученных и загадочных миров Солнечной системы.</p>
+                        <ul>
+                            <li>Четвертая планета от Солнца</li>
+                            <li>Имеет разреженную атмосферу из углекислого газа</li>
+                            <li>Относится к земной группе планет</li>
+                            <li>Поверхность содержит оксиды железа, придающие красный цвет</li>
+                            <li>Имеет два естественных спутника — Фобос и Деймос</li>
+                            <li>На полярных шапках есть водяной лед и сухой лед</li>
+                        </ul>
+                        <p class="bold">Марс в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 3390 км (примерно в 2 раза меньше Земли)</li>
+                            <li>Температура поверхности: от -153°C до +35°C</li>
+                            <li>Год: 687 земных дней</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>Гора Олимп на Марсе — самый высокий вулкан в Солнечной системе. 
+                             Его высота составляет 21 км, что в 2.5 раза выше Эвереста</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>Спутники Марса Фобос и Деймос имеют неправильную форму и похожи на картофелины. 
+                             Они могут быть захваченными астероидами</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>На Марсе случаются глобальные пылевые бури, которые могут длиться месяцами 
+                             и охватывать всю планету, полностью скрывая её поверхность</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>Ученые нашли многочисленные свидетельства того, что в прошлом на Марсе 
+                             были реки, озера и даже океаны жидкой воды</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>Из-за мелкой красной пыли в атмосфере небо на Марсе имеет розовато-красный оттенок, 
+                             а закаты здесь голубые</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №6</h2>
+                        <div class="hiddy">
+                            <p>Планета Марс названа в честь древнеримского бога войны Марса,
+                                 а так же символизирует мужественность и мужской пол</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

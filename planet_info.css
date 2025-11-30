@@ -1,0 +1,120 @@
+.block{
+    display:inline-block;
+    padding-bottom: 20px;
+}
+.block_container{
+    display:flex;
+    align-items: center;
+}
+
+.planet_img{
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+    animation: float 5s ease-in-out infinite;
+    padding:15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+.moon_img{
+    display: absolute;
+    transform:translateX(100px) translateY(-100px);
+}
+/*Списки*/
+.glass ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+.glass li {
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+/*Контейнеры под факты*/
+.misty_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.misty{
+    align-self: center;
+    margin: 25px;
+    display:inline-block;
+    background-color: var(--border_col);
+    border-radius: 15px;
+    width:25%;
+}
+/*Сам факт скрыт под блюром*/
+.hiddy{
+    position: relative;
+}
+.hiddy::before{
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background: rgba(89, 4, 91, 0.3);
+    filter:blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+    z-index: 1;
+}
+/*Блюр исчезает при наведении*/
+.hiddy:hover::before{
+    opacity: 0;
+    visibility:hidden;
+}
+
+/*Статическая анимация парения планеты*/
+@keyframes float {
+    0% { margin-top: 5px; }
+    25% { margin-top: 0px; }
+    50% { margin-top: -5px; }
+    75% { margin-top: 0px; }
+    100% { margin-top: 5px; }
+}
+@media(max-width:1340px){
+    .main_title{font-size: 43px;}
+}
+@media(max-width:1080px){
+    .main_title{font-size: 33px;}
+    .planet_img{width:80%}
+    .misty{width:35%;}
+    .block_container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .planet_img {
+        margin: 20px auto 0 auto;
+        display: block;
+        order: 2;
+    }
+    
+    .block:first-child {
+        order: 1;
+    }
+    
+    .block:last-child {
+        order: 2;
+    }
+}
+@media (max-width: 480px) {
+    .main_title{font-size: 30px;}
+    .misty{width:55%;}
+    li{font-size:15px;}
+    .planet_img {
+        width: 80%;
+        max-width: 250px;
+    }
+}

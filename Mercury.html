@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Меркурий</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Меркурий</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Меркурий</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/mercur.png" width="250" class="planet_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Меркурий довольно яркий, но все же его нелегко увидеть: большую часть времени он находится на небе рядом с Солнцем.</p>
+                        <ul>
+                            <li>Находится ближе всего к солнцу</li>
+                            <li>Самая маленькая планета в системе</li>
+                            <li>Относится к земной группе планет</li>
+                            <li>Его поверхность покрыта кратерами, из-за чего планета напоминает Луну</li>
+                            <li>Меркурий всего на треть больше Луны</li>
+                            <li>У Меркурия нет спутников</li>
+                        </ul>
+                        <p class="bold">Меркурий в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 2440км</li>
+                            <li>Температура поверхности: от -173°C до 427°C</li>
+                            <li>Год: 88 земных дней</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>На Меркурии нет времен года, потому что его ось почти не имеет наклона</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>Как и у Луна, Меркурий обладает фазами, которые можно заметить лишь с помощью телескопа</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>За Меркурием тянется след из атомов натрия и со стороны это выглядит как хвост кометы</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>У Меркурия есть огромное железное ядро, составляющее около 85% радиуса планеты. 
+                                По мере остывания это ядро сжимается, из-за чего на поверхности
+                                 образовались гигантские уступы и скалы</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>Несмотря на адскую жару, на дне глубоких полярных кратеров,
+                                 был обнаружен водяной лёд</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №6</h2>
+                        <div class="hiddy">
+                            <p>Планета Меркурий названа в честь
+                                древнеримского бога Меркурия — покровителя торговли.
+                                Имя было дано из-за быстрого движения планеты вокруг Солнца</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №7</h2>
+                        <div class="hiddy">
+                            <p>"Mercury" на английском означает как ртуть, так и планету</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

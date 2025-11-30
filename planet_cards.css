@@ -1,0 +1,275 @@
+.planet_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:2%; margin-right:2%;
+    padding: 15%;
+    padding-bottom: 20%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+p{
+    padding:1px;
+}
+/*Заголовок у планет*/
+.planet_title {
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--hologram_text);
+    padding: 5px 10px;
+    white-space: nowrap;
+    z-index: 10;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.planet_title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--hologram_col);
+    border-radius: 25%;
+    filter: blur(10px);
+    z-index: -1;
+    opacity:0.8;
+}
+.Sun, .Merc, .Earth, .Ven, .Mars, .Upit, .Saturn, .Uran, .Neptune {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Элемент Солнце*/
+.Sun{
+    z-index:500; 
+    transition: transform 1s ease-in-out;
+}
+.Sun:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 232, 150, 0.7));
+}
+@media(min-width:1081px){
+.Sun:hover .planet_title{visibility: visible; opacity:1;}
+.Sun:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+/*Элемент Меркурий --------------------------------------------------------------------------------------------------------*/
+.Merc{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+}
+.Merc:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(186, 185, 201, 0.7));
+}
+@media(min-width:1081px){
+.Merc:hover .planet_title{visibility: visible; opacity:1;}
+.Merc:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+/*Элемент Венеры --------------------------------------------------------------------------------------------------------*/
+.Ven{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+}
+.Ven:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(206, 180, 108, 0.7));
+}
+@media(min-width:1081px){
+.Ven:hover .planet_title{visibility: visible; opacity:1;}
+.Ven:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+/*Элемент Земля --------------------------------------------------------------------------------------------------------*/
+.Earth{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+}
+.Earth:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(153, 150, 255, 0.7));
+}
+@media(min-width:1081px){
+.Earth:hover .planet_title{visibility: visible; opacity:1;}
+.Earth:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+/*Элемент Марса --------------------------------------------------------------------------------------------------------*/
+.Mars{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+}
+.Mars:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(200, 96, 48, 0.7));
+}
+@media(min-width:1081px){
+.Mars:hover .planet_title{visibility: visible; opacity:1;}
+.Mars:not(hover) .planet_title{visibility: hidden; opacity:0;}  
+}
+/*Элемент Юпитер --------------------------------------------------------------------------------------------------------*/
+.Upit{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+}
+.Upit:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(165, 125, 60, 0.7));
+}
+@media(min-width:1081px){
+.Upit:hover .planet_title{visibility: visible; opacity:1;}
+.Upit:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+/*Элемент Сатурна --------------------------------------------------------------------------------------------------------*/
+.Saturn{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+    transform: scale(0.7);
+}
+.Saturn:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(245, 192, 33, 0.7));
+}
+@media(min-width:1081px){
+.Saturn:hover .planet_title{visibility: visible; opacity:1;}
+.Saturn:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+/*Элемент Урана --------------------------------------------------------------------------------------------------------*/
+.Uran{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+    transform: scale(0.7);
+}
+.Uran:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(58, 55, 147, 0.7));
+}
+@media(min-width:1081px){
+.Uran:hover .planet_title{visibility: visible; opacity:1;}
+.Uran:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+/*Элемент Нептуна --------------------------------------------------------------------------------------------------------*/
+.Neptune{
+    position: absolute;
+    z-index:403;
+    transition: transform 2s ease-in-out;
+    animation: float 2s ease-in-out infinite;
+}
+.Neptune:hover{
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(130, 202, 238, 0.7));
+}
+@media(min-width:1081px){
+.Neptune:hover .planet_title{visibility: visible; opacity:1;}
+.Neptune:not(hover) .planet_title{visibility: hidden; opacity:0;}
+}
+@media(max-width:1400px){
+    .main_title{
+        font-size: 50px;
+    }
+}
+/*Анимация появления планет при большом экране*/
+@media(min-width:1081px){
+    .planet_container:hover .Merc{transform:translateX(-500px) translateY(-175px);}
+    .planet_container:hover .Ven{transform:translateX(-175px) translateY(-250px);}
+    .planet_container:hover .Earth{ transform:translateX(175px) translateY(-250px);}
+    .planet_container:hover .Mars{ transform:translateX(500px) translateY(-150px);}
+    .planet_container:hover .Upit{ transform:translateX(500px) translateY(150px);}
+    .planet_container:hover .Saturn{ transform:translateX(175px) translateY(250px) scale(1);}
+    .planet_container:hover .Uran{ transform:translateX(-175px) translateY(250px) scale(1);}
+    .planet_container:hover .Neptune{ transform:translateX(-500px) translateY(150px);}
+}
+@media(max-width:1080px){
+.planet_container {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .planet{
+        align-self: center;
+        margin: 5px;
+        display:inline-block;
+        background-color: var(--border_col);
+        border-radius: 15px;
+        width:45%;
+    }
+    .like_button{
+        display: none;
+    }
+    
+    .Sun, .Merc, .Ven, .Earth, .Mars, .Upit, .Saturn, .Uran, .Neptune {
+        position: static;
+        transform: none ;
+        animation: none;
+    }
+    
+    .planet_title {
+        position: static;
+        transform: none;
+        font-size: 20px;
+        margin-top: 10px;
+        color:white;
+        background-color: var(--back_col_dark);
+        border-radius: 15px;
+        border: solid var(--border_size) var(--border_col);
+        margin:2px;
+    }
+    
+    .planet_title::before {display: none;}
+
+    .main_title{font-size: 32px;}
+    
+    /*Уменьшаем размеры планет*/
+    img{padding:20px;}
+    .Sun img {width: 75%;}
+    .Merc img {width: 50% ;}
+    .Ven img {width: 50% ;}
+    .Earth img {width: 50% ;}
+    .Mars img {width: 50% ;}
+    .Upit img {width: 75% ;}
+    .Saturn img { width: 75% ;}
+    .Uran img {width: 65% ;}
+    .Neptune img {width: 65%;}
+    
+    .Sun:hover, .Merc:hover, .Ven:hover, .Earth:hover, .Mars:hover, 
+    .Upit:hover, .Saturn:hover, .Uran:hover, .Neptune:hover {
+        filter: none;
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .planet_container {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .planet{
+        align-self: center;
+        margin: 10px;
+        display:inline-block;
+        background-color: var(--border_col);
+        border-radius: 15px;
+        width:100%;
+    }
+    .main_title{font-size: 28px;}
+}
+/*Статическая анимация парения планеты*/
+@keyframes float {  
+    0% { margin-top: 5px; }
+    25% { margin-top: 0px; }
+    50% { margin-top: -5px; }
+    75% { margin-top: 0px; }
+    100% { margin-top: 5px; }
+}

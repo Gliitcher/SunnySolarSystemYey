@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_cards.css">
+        <link rel="stylesheet" href="galery.css">
+        <link rel="stylesheet" href="other.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="img/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="#planets" class="nav_link">Состав системы</a>
+                    <a href="#other" class="nav_link">Космические тела</a>
+                    <a href="#gallery" class="nav_link">Галерея</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="#planets" class="burger_nav_link">Состав системы</a>
+                        <a href="#other" class="burger_nav_link">Космические тела</a>
+                        <a href="#gallery" class="burger_nav_link">Галерея</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="planets" class="glass">
+                <h1 class="title">Состав системы</h1>
+                <p>Солнечная система состоит из восьми планет, которые вращаются вокруг звезды - Солнце</p>
+                <p>Планеты делят на два вида: земные и газовые гиганты</p>
+                <!--При большой экране-->
+                    <div class="planet_container">
+                        <a href="Sun.html" class="Sun planet">
+                            <img src="img/Svetilo.png" width="325">
+                            <div class="planet_title">
+                                <p>Солнце</p>
+                            </div>
+                        </a>
+                        <!--Земная группа-->
+                        <a href="Mercury.html" class="Merc planet">
+                            <img src="img/mercur.png" width="150">
+                            <div class="planet_title">
+                                <p>Меркурий</p>
+                            </div>
+                        </a>
+                        <a href="Ven.html" class="Ven planet">
+                            <img src="img/ven.png" width="190">
+                            <div class="planet_title">
+                                <p>Венера</p>
+                            </div>
+                        </a>
+                        <a href="Earth.html" class="Earth planet">
+                            <img src="img/earth_moon.png" width="225">
+                            <div class="planet_title">
+                                <p>Земля</p>
+                            </div>
+                        </a>
+                        <a href="Mars.html" class="Mars planet">
+                            <img src="img/mars.png" width="200">
+                            <div class="planet_title">
+                                <p>Марс</p>
+                            </div>
+                        </a>
+                        <!--Газовые гиганты-->
+                        <a href="Upiter.html" class="Upit planet">
+                            <img src="img/yupi.png" width="250">
+                            <div class="planet_title">
+                                <p>Юпитер</p>
+                            </div>
+                        </a>
+                        <a href="Saturn.html" class="Saturn planet">
+                            <img src="img/saturn.png" width="320">
+                            <div class="planet_title">
+                                <p>Сатурн</p>
+                            </div>
+                        </a>
+                        <a href="Uran.html" class="Uran planet">
+                            <img src="img/uran.png" width="300">
+                            <div class="planet_title">
+                                <p>Уран</p>
+                            </div>
+                        </a>
+                        <a href="Neptune.html" class="Neptune planet">
+                            <img src="img/neptune.png" width="210">
+                            <div class="planet_title">
+                                <p>Нептун</p>
+                            </div>
+                        </a>
+                    </div>
+            </section>
+            <section id="other" class="glass">
+                <h1 class="title">Космические тела</h1>
+                <p>Солнечная система не ограничивается лишь планетами, их спутниками и Солнцем.
+                    Здесь есть множество удивительный космических тел!
+                </p>
+                <div class="other_container">
+                    <div class="other_object">
+                        <div class="other_thumbnails_container" id="otThumbnailsContainer">
+                            
+                        </div>
+                    </div>
+                    <div class="other_object">
+                        <div class="other_main_container">
+                            <div class="other_image_container_main">
+                                <img src="img/pluto.png" alt="Космическое тело" class="other_image_main" id="otMainImage">
+                            </div>
+                            <div class="other_content_container">
+                                <h2 class="other_content_title" id="otImageCaption">Плутон</h2>
+                                <p class="other_content_description">Описание космического тела</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery" class="glass">
+                <h1 class="title">Галерея</h1>
+                <p>Здесь вы можете посмотреть тематические картинки</p>
+                <div class="gallery">
+                    <div class="image_container">
+                        <img src="gallery/Ustroystv.png" alt="Картинки" class="image" id="mainImage">
+                    </div>
+                    <div id="imageCaption">Устройство солнечной системы</div>
+                </div>
+                
+                <div class="thumbnails_container" id="thumbnailsContainer">
+                    
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+        <script src="scripts/gallery.js"></script>
+        <script src="scripts/other.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Сатурн</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Сатурн</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Сатурн</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/saturn.png" width="380" class="planet_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Сатурн — жемчужина Солнечной системы, знаменитая своими великолепными кольцами.</p>
+                        <ul>
+                            <li>Шестая планета от Солнца</li>
+                            <li>Вторая по размеру планета в системе</li>
+                            <li>Имеет самую заметную систему колец</li>
+                            <li>Обладает наименьшей плотностью среди планет</li>
+                            <li>Имеет 146 известных спутников</li>
+                            <li>Относится к газовым гигантам</li>
+                        </ul>
+                        <p class="bold">Сатурн в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 58 232 км (в 9 раз больше Земли)</li>
+                            <li>Температура верхних слоев: около -178°C</li>
+                            <li>Год: 10 759 земных дней (около 29.5 лет)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>На северном полюсе Сатурна существует гигантский шестиугольный шторм, 
+                             каждая сторона которого больше диаметра Земли</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>Кольца Сатурна состоят в основном из частичек льда размером от микрон до нескольких метров, 
+                             а их толщина не превышает 1 километра</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>Титан — единственный спутник в Солнечной системе с плотной атмосферой и единственное тело кроме Земли, 
+                             где доказано существование жидких озёр на поверхности</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>Кольца Сатурна постепенно исчезают — они падают на планету в виде "кольцевого дождя"</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>Гиперион — спутник Сатурна неправильной формы, имеющий губчатую структуру. 
+                             Его пористость достигает 40%, а поверхность напоминает пемзу</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

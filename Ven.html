@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Венера</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Венера</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Венера</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/ven.png" width="300" class="planet_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Венеру считают "сестрой" Земли, 
+                            но в отличие от неё, она обладает адскими условиями с плотной ядовитой атмосферой и кислотными облаками.</p>
+                        <ul>
+                            <li>Вторая планета от Солнца</li>
+                            <li>Имеет схожие с Землей размер и массу</li>
+                            <li>Относится к земной группе планет</li>
+                            <li>Её поверхность скрыта под толстым слоем облаков из серной кислоты</li>
+                            <li>На Венере нет естественных спутников</li>
+                            <li>Это самая горячая планета в Солнечной системе</li>
+                        </ul>
+                        <p class="bold">Венера в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 6052 км</li>
+                            <li>Температура поверхности: ~470°C</li>
+                            <li>Год: 225 земных дней</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>Венера вращается вокруг своей оси в противоположном направлении.
+                                 Солнце на Венере восходит на западе и заходит на востоке</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>Невероятно плотная атмосфера из углекислого газа создает мощнейший парниковый эффект,
+                                 сильно разогревая поверхность</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>На поверхности Венеры находятся тысячи вулканов, больше чем на любой другой планете Солнечной Системы</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>Венера названа в честь римской богини любви, красоты и плодородия.
+                                 В древнеримской мифологии Венера считалась богиней, которая также покровительствовала 
+                                 процветанию, весне и плодородию природы</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>В астрологии Венера олицетворяет женское начало, красоту, любовь и гармонию.
+                                 Все крупные географические объекты на поверхности планеты названы в честь женщин
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

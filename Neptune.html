@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Нептун</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Нептун</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Нептун</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/neptune.png" width="300" class="planet_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Нептун — ледяной гигант, самая дальняя планета Солнечной системы.</p>
+                        <ul>
+                            <li>Восьмая планета от Солнца</li>
+                            <li>Относится к ледяным гигантам</li>
+                            <li>Имеет самый сильный ветер в Солнечной системе</li>
+                            <li>Обладает системой тонких колец</li>
+                            <li>Открыт с помощью расчётов в 1846 году</li>
+                            <li>Имеет 16 известных спутников</li>
+                        </ul>
+                        <p class="bold">Нептун в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 24 622 км (в 4 раза больше Земли)</li>
+                            <li>Температура верхних слоев: около -218°C</li>
+                            <li>Год: 60 190 земных дней (около 165 лет)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>Нептун стал первой планетой, открытой благодаря математическим расчетам. 
+                             Астрономы Урбен Леверье и Джон Адамс предсказали его положение</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>На Нептуне дуют самые быстрые ветра в Солнечной системе — их скорость 
+                             достигает 2100 км/ч, что превышает скорость звука на Земле</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>Ученые предполагают, что в глубинах Нептуна могут идти настоящие алмазные дожди — 
+                             углеводороды распадаются под давлением, образуя кристаллы алмазов</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>Как и у Юпитера, у Нептуна есть гигантские штормовые вихри. Большое тёмное пятно, 
+                             обнаруженное "Вояджером-2", было размером с Землю</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>Тритон — крупнейший спутник Нептуна — имеет активные гейзеры, 
+                             извергающие азот и частицы пыли на высоту до 8 километров</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №6</h2>
+                        <div class="hiddy">
+                            <p>Нептун был назван так, в честь римского бога морей.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

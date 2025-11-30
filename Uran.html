@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Уран</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Уран</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Уран</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/uran.png" width="370" class="planet_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Уран — ледяной гигант, открытый Уильямом Гершелем в 1781 году.</p>
+                        <ul>
+                            <li>Седьмая планета от Солнца</li>
+                            <li>Относится к классу ледяных гигантов</li>
+                            <li>Имеет систему тонких темных колец</li>
+                            <li>Поверхность состоит из льдов метана, аммиака и воды</li>
+                            <li>Имеет 27 известных естественных спутников</li>
+                            <li>Атмосфера содержит водород, гелий и метан</li>
+                        </ul>
+                        <p class="bold">Уран в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 25 362 км (в 4 раза больше Земли)</li>
+                            <li>Температура атмосферы: -224°C</li>
+                            <li>Год: 84 земных года</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>Уран вращается вокруг своей оси, "лежа на боку" с углом наклона составляет 98 градусов. 
+                                Это вызывает экстремальную смену сезонов, каждый из которых длится около 21 года</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>Несмотря на то, что Нептун находится дальше от Солнца, Уран — самая холодная планета</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>Метан в атмосфере Урана поглощает красный свет и отражает голубой, 
+                             придавая планете характерный бледно-голубой цвет</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>Под атмосферой Урана находится огромный океан из воды, аммиака и метанового льда, 
+                             окружающий небольшое каменное ядро</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>Все 27 спутников Урана названы в честь персонажей произведений Уильяма Шекспира 
+                             и Александра Поупа</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>

@@ -1,0 +1,143 @@
+nav {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav_desktop {
+    display: flex;
+    gap: 15px;
+}
+
+.nav_link, .burger_nav_link {
+    color: white;
+    text-decoration: none;
+    background-color: var(--back_col_dark);
+    padding: 10px 10px;
+    border: solid var(--border_size) var(--border_col);
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.burger_nav_link{
+    margin-top:5px;
+}
+
+/* Бургер-меню - всегда видно */
+.burger_menu {
+    display: block;
+    position: relative;
+}
+
+.burger_button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.burger_button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.burger_content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: var(--back_col);
+    border: 1px solid var(--border_col);
+    border-radius: 10px;
+    min-width: 200px;
+    padding: 10px;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+}
+
+.burger_content.show {
+    display: block;
+}
+
+.burger_content .nav_link {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.theme_switcher {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.theme_btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    background: var(--glass_col);
+    border: 1px solid var(--border_col);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.like_button{
+    display: inline-block;
+    width: 25%;
+    padding: 8px;
+    margin: 5px 0;
+    background: var(--glass_col);
+    border: 1px solid var(--border_col);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.falling_star {
+    position: fixed;
+    font-size: 20px;
+    z-index: 10001;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.theme_btn:hover {
+    background: rgba(106, 86, 160, 0.5);
+}
+@media(max-width:1400px){
+    .nav_link{
+        font-size: 15px;
+    }
+}
+
+/* Адаптивность навигации */
+@media (max-width: 1080px) {
+    .nav_desktop {
+        display: none; /* Скрываем навигацию в заголовке на маленьких экранах */
+    }
+    
+    .burger_nav_link {
+        display: block; /* Показываем "Состав системы" в бургер-меню */
+    }
+}
+
+@media (min-width: 1081px) {
+    .nav_desktop {
+        display: flex; /* Показываем навигацию в заголовке на больших экранах */
+    }
+    
+    .burger_nav_link {
+        display: none;
+    }
+    .theme_switcher{
+        border-top: none;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="planet_info.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Установление Фав-иконки-->
+        <link rel="icon" type="image/png" href="/FavIlcon.png">
+        <!--Заголовок сайта, который отображается во вкладочке-->
+        <title>Солнечная система</title>
+    </head>
+
+    <body> 
+        <header>
+            <img src="img/Svetilo.png" width="75" height="75">
+            <h1 class="main_title">Солнечная система</h1>
+            <nav>
+                <div class="nav_desktop">
+                    <a href="main.html" class="nav_link">Солнечная система</a>
+                    <a href="#main" class="nav_link">Земля</a>
+                    <a href="#facts" class="nav_link">Факты</a>
+                </div>
+                <div class="burger_menu">
+                    <button class="burger_button">☰</button>
+                    <div class="burger_content">
+                        <a href="main.html" class="burger_nav_link">Солнечная система</a>
+                        <a href="#main" class="burger_nav_link">Земля</a>
+                        <a href="#facts" class="burger_nav_link">Факты</a>
+                        <div class="theme_switcher">
+                            <button class="theme_btn" data-theme="light">Светлая тема</button>
+                            <button class="theme_btn" data-theme="dark">Тёмная тема</button>
+                            <button class="like_button" onclick="toggleColor(this)">★</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Летающие позади кубики, красивое оформление и ми-ми-ми -->
+            <div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <section id="main" class="glass">
+                <h1 class="title">Земля</h1>
+                <div class="block_container">
+                    <div class="block">
+                        <img src="img/earth.png" width="315" class="planet_img">
+                        <img src="img/moon.png" width="75" class="moon_img">
+                    </div>
+                    <div class="block">
+                        <p class="bold">Земля — наш дом, третья планета от Солнца и единственное известное тело во Вселенной, населенное живыми организмами.</p>
+                        <ul>
+                            <li>Единственная известная планета с жизнью</li>
+                            <li>Имеет мощное магнитное поле, защищающее от солнечной радиации</li>
+                            <li>Относится к земной группе планет</li>
+                            <li>Поверхность на 71% покрыта водой</li>
+                            <li>Имеет один естественный спутник — Луну</li>
+                            <li>Атмосфера богата азотом и кислородом</li>
+                        </ul>
+                        <p class="bold">Земля в Цифрах</p>
+                        <ul>
+                            <li>Радиус: 6371 км</li>
+                            <li>Температура поверхности: от -89°C до 58°C</li>
+                            <li>Год: 365.25 земных дней</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="glass">
+                <h1 class="title">Интересные факты</h1>
+                <div class="misty_container">
+                    <div class="misty">
+                        <h2>Факт №1</h2>
+                        <div class="hiddy">
+                            <p>Более 70% поверхности Земли покрыто водой, но 96% этой воды — соленая. 
+                   Менее 1% всей воды на планете является пресной.</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №2</h2>
+                        <div class="hiddy">
+                            <p>Из-за гравитационного взаимодействия с Луной вращение Земли постепенно замедляется. 
+                                Каждый век продолжительность земных суток увеличивается примерно на 1.7 миллисекунды</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №3</h2>
+                        <div class="hiddy">
+                            <p>Земная кора состоит из тектонических плит, которые постоянно движутся со скоростью роста человеческих ногтей</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №4</h2>
+                        <div class="hiddy">
+                            <p>Согласно самой популярной теории, Луна образовалась примерно 4,5 миллиарда лет назад
+в результате столкновения молодой Земли с протопланетой размером с Марс, которую назвали Тейей</p>
+                        </div>
+                    </div>
+                    <div class="misty">
+                        <h2>Факт №5</h2>
+                        <div class="hiddy">
+                            <p>Луна важна для Земли, так как она стабилизирует ось вращения, что обеспечивает
+                                 климат и смену времен года. Она так же вызывает приливы и отливы и защищает Землю от метеоритов</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/navigation.js"></script>
+        <script src="scripts/button.js"></script>
+    </body>
+
+    <footer>
+       
+    </footer>
+</html>
