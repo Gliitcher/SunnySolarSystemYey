@@ -75,6 +75,26 @@
     visibility:hidden;
 }
 
+.left_arrow,
+.right_arrow{
+    position: absolute;
+    display:absolute;
+    top:0;
+    margin:10px;
+    border: solid 2px var(--hologram_text);
+    border-radius:4px;
+    font-size: 35px;
+    color:var(--hologram_text);
+    background-color: var(--hologram_col);
+    padding: 0px 10px;
+}
+.left_arrow{
+    left:2%;
+}
+.right_arrow{
+    right:2%;
+}
+
 /*Статическая анимация парения планеты*/
 @keyframes float {
     0% { margin-top: 5px; }

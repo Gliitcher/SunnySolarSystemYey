@@ -39,7 +39,7 @@ body {
 header { 
     background: var(--back_col); 
     font-size: 35px;
-    border-bottom: solid --border_size var(--border_col);
+    border-bottom: solid var(--border_size) var(--border_col);
     padding: 10px; /* Внутренние отступы */
     display: flex; /* Для выравнивания логотипа и заголовка */
     align-items: center; /* Выравнивание по центру по вертикали */
@@ -53,9 +53,19 @@ header {
 footer {
     background: var(--back_col); 
     display: flex;
+    justify-content: center;
     border-top: solid --border_size var(--border_col);
     z-index: 1000;
     padding: 10px;
+}
+.foot_el{
+    margin: 5px;
+    display: inline-flex;
+    background-color: var(--back_col_dark);
+    border-radius: 5px;
+    border: solid var(--border_size) var(--border_col);
+    color:white;
+    padding: 5px;
 }
 main{
     margin-top:100px;
@@ -63,6 +73,7 @@ main{
 }
 a{
     cursor:pointer;
+    text-decoration:none;
 }
 /*Базовое стекло с блюром*/
 .glass{
@@ -91,6 +102,7 @@ a{
     border-radius: 15%;
     animation: floatSquare 15s infinite ease-in-out;
     filter:blur(2px);
+    z-index: -10;
 }
 
 .square:nth-child(1) {
