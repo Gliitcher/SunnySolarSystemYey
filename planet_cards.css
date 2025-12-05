@@ -166,6 +166,7 @@ p{
 .Neptune:hover{
     filter: brightness(1.2) drop-shadow(0 0 10px rgba(130, 202, 238, 0.7));
 }
+
 @media(min-width:1081px){
 .Neptune:hover .planet_title{visibility: visible; opacity:1;}
 .Neptune:not(hover) .planet_title{visibility: hidden; opacity:0;}
@@ -202,9 +203,6 @@ p{
         border-radius: 15px;
         width:45%;
     }
-    .like_button{
-        display: none;
-    }
     
     .Sun, .Merc, .Ven, .Earth, .Mars, .Upit, .Saturn, .Uran, .Neptune {
         position: static;
@@ -226,7 +224,7 @@ p{
     
     .planet_title::before {display: none;}
 
-    .main_title{font-size: 32px;}
+    .main_title{font-size: 40px;}
     
     /*Уменьшаем размеры планет*/
     img{padding:20px;}
@@ -245,6 +243,24 @@ p{
         filter: none;
         transform: none;
     }
+}
+
+@media(max-width:1080px)  and (min-width:480px)and (orientation: portrait){
+    .main_title{font-size: 65px;}
+    .planet_container{
+        padding:2%;
+    }
+    .planet_title{
+        font-size: 30px;
+    }
+    body{
+        font-size: 30px;
+    }
+    .foot_el{font-size: 30px;}
+}
+
+@media(max-width:755px) and (orientation: portrait){
+    .main_title{font-size: 30px;}
 }
 
 @media (max-width: 480px) {
